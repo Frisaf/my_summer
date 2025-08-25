@@ -1,0 +1,75 @@
+body, main {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: "Josefin Sans", sans-serif;;
+    font-size: 1.2rem;
+    background-color: rgb(6, 6, 6);
+}
+
+a:visited, a {
+    color: lightblue;
+}
+
+a:hover {
+    color: white;
+}
+
+.hero {
+    background-color: rgb(4, 4, 4);
+    display: grid;
+    grid-template-areas: "hero";
+}
+
+.hero img {
+    width: 100%;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.heroText {
+    color: white;
+    z-index: 1;
+    width: fit-content;
+    margin-left: 10vh;
+    margin-block: auto;
+}
+
+.hero > * {
+    grid-area: hero;
+}
+
+.textBox {
+    width: 100vh;
+    margin-inline: auto;
+    margin-top: 40px;
+    color: rgb(243, 243, 243);
+    padding-bottom: 50px;
+}
+
+.subject {
+    display: flex;
+    gap: 5vh;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.subject img {
+    width: 50vh;
+    border-radius: 50px;
+}
+
+.subjectText {
+    display: block;
+}
+
+.ending {
+    margin-top: 50px;
+}
+
+.ending img {
+    width: 100vh;
+    border-radius: 50px;
+}
